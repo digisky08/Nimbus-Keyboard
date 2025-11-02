@@ -1,9 +1,6 @@
+// Payment gateway removed
 export async function checkout() {
-  try {
-    const res = await fetch("/api/checkout/vapor75", { method: "POST" });
-    const data = await res.json();
-    window.location.href = data.url;
-  } catch (error) {
-    console.error("Purchase Failed:", error);
-  }
+  console.log('Payment gateway has been not added !');
+  alert('Payment gateway has been not added !');
+  // Implement your new payment solution here
 }
